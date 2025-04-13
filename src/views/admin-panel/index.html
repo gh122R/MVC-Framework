@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/spectre/spectre.min.css">
+    <title>Админ-панелька</title>
+</head>
+<body>
+<div style="display: flex;justify-content: center;align-items: center;" class="card">
+    <div class="card-body" style="width: 600px">
+        <h1>Вы на админ панели - защищённой middleware'ом странице</h1>
+        <div class="card">
+            <h3>Ваши данные:</h3>
+            <p>username: <?= $userInfo['username'] ?></p>
+            <p>email: <?= $userInfo['email'] ?></p>
+            <p>fullname: <?= $userInfo['first_name'] ?> <?= $userInfo['surname'] ?></p>
+            <p>role: <?= $userInfo['role'] ?></p>
+        </div>
+        <br>
+        <a class="btn btn-block" href="/">Домашняя страничка</a>
+        <br>
+        <a class="btn btn-block" href="/logout">Выйти из аккаунта</a>
+    </div>
+</div>
+</body>
+</html>
